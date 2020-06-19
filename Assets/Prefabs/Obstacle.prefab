@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a679a01004a4f44a528a8dc2b4918d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleSpeed: 5
+  obstacleSpeed: 0
   dir: {x: 0, y: 0, z: 0}
 --- !u!114 &6166600105256496791
 MonoBehaviour:

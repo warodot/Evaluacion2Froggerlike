@@ -7,7 +7,8 @@ public class SpawnerBehaviour:MonoBehaviour
     public GameObject obstaclePrefab;
 
     public float spawnTimer = 2;
-    float currentTime;
+    public float speed;
+    float currentTime = 9999;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +17,7 @@ public class SpawnerBehaviour:MonoBehaviour
         if (currentTime > spawnTimer)
         {
             GameObject obstacle = Instantiate(obstaclePrefab, transform.position, Quaternion.identity, transform);
+            obstacle.GetComponent<ObstacleBehaviour>().obstacleSpeed = speed;
 
             if( dir == Direction.Left)
             {
