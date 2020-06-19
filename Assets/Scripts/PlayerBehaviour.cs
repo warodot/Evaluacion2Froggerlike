@@ -13,7 +13,7 @@ public class PlayerBehaviour:MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         //Asi hago usualmente el input yo, no me mate, me queda mas comodo
 
-        transform.position += new Vector3(h, v, 0) * speed * Time.deltaTime;
+        transform.position += new Vector3(h, v, 0).normalized * speed * Time.deltaTime;
 
         //para que sea mas bonito ;)
         if (h != 0 || v != 0)
